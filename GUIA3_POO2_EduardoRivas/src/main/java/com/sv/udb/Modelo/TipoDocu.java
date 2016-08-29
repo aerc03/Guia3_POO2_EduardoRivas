@@ -61,43 +61,83 @@ public class TipoDocu implements Serializable {
     public TipoDocu(Long codiTipoDocu) {
         this.codiTipoDocu = codiTipoDocu;
     }
-
+    
+    /**
+     * Devuelve el valor del atributo CodiTipoDocu
+     * @return codiTipoDocu
+     */
     public Long getCodiTipoDocu() {
         return codiTipoDocu;
     }
 
+    /**
+     * Asigna un valor de tipo long al atributo codiTipoDocu
+     * @param codiTipoDocu 
+     */
     public void setCodiTipoDocu(Long codiTipoDocu) {
         this.codiTipoDocu = codiTipoDocu;
     }
 
+    /**
+     * Regresa un valor string del atributo NombTipoDocu
+     * @return  nombTipoDocu
+     */
     public String getNombTipoDocu() {
         return nombTipoDocu;
     }
 
+    /**
+     * Asigna un valor string al atributo nombTipoDocu
+     * @param nombTipoDocu 
+     */
     public void setNombTipoDocu(String nombTipoDocu) {
         this.nombTipoDocu = nombTipoDocu;
     }
 
+    /**
+     * Retorna un valor de fecha del atributo fechaAlta
+     * @return fechAlta
+     */
     public Date getFechAlta() {
         return fechAlta;
     }
 
+    /**
+     * asigna un valor de fecha al atributo fechAlta
+     * @param fechAlta 
+     */
     public void setFechAlta(Date fechAlta) {
         this.fechAlta = fechAlta;
     }
 
+    /**
+     * Retorna un valor de tipo DATE 
+     * @return fechBaja
+     */
     public Date getFechBaja() {
         return fechBaja;
     }
 
+    /**
+     * Asigna un valor date al atributo fechBaja
+     * @param fechBaja 
+     */
     public void setFechBaja(Date fechBaja) {
         this.fechBaja = fechBaja;
     }
 
+    /**
+     * Retorna un valor entero de estado del atributo Esta
+     * @return esta
+     */
     public Integer getEsta() {
         return esta;
     }
 
+    /**
+     * Asigna un valor entero al atributo de estado
+     * @param esta 
+     */
     public void setEsta(Integer esta) {
         this.esta = esta;
     }

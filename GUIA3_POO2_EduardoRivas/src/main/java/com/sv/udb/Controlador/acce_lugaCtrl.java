@@ -18,9 +18,16 @@ import javax.persistence.TypedQuery;
 /**
  *
  * @author aerc
+ * @version 1.0 25 de agosto de 2016
  */
 public class acce_lugaCtrl {
     
+    /**
+     * Metodo que guarda el objeto en la base de datos en la tabla acce_luga
+     * @param obje de tipo LugaAcce
+     * @return resp de tipo boolean true si no hubo ningun problema de lo contrario false
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public boolean guar(LugaAcce obje)
     {
         boolean resp = false;
@@ -43,6 +50,13 @@ public class acce_lugaCtrl {
         return resp;
     }
     
+    /**
+     * Metodo que "elimina" el objeto en la base de datos en la tabla acce_luga, cambia el estado y guarda
+     * la fecha en la que se elimino en el campo fech_baja
+     * @param obje de tipo LugaAcce
+     * @return resp de tipo boolean true si no hubo ningun problema de lo contrario false
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public boolean elim(LugaAcce obje)
     {
         boolean resp = false;
@@ -69,6 +83,12 @@ public class acce_lugaCtrl {
         return resp;
     }
     
+    /**
+     * Metodo que modifica el registro en la base de datos en la tabla acce_luga
+     * @param obje de tipo LugaAcce
+     * @return resp de tipo boolean true si no hubo ningun problema de lo contrario false
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public boolean modi(LugaAcce obje)
     {
         boolean resp = false;
@@ -94,6 +114,13 @@ public class acce_lugaCtrl {
         return resp;
     }
     
+    /**
+     * Metodo que Consulta el objeto en la base de datos en la tabla acce_luga
+     * la fecha en la que se elimino en el campo fech_baja
+     * @param codiLugaAcce de tipo long, se utiliza para consultar un registro en la base
+     * @return resp de tipo LugaAcce con el objeto del registro consultado
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public LugaAcce cons(Long codiLugaAcce)
     {
         LugaAcce resp = null;
@@ -115,6 +142,11 @@ public class acce_lugaCtrl {
         return resp;
     }
     
+    /**
+     * Metodo que consulta todos los registros de la tabla luga_acce
+     * @return resp una lista con los registros de la tabla luga_acce
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public List<LugaAcce> consTodo()
     {
         List<LugaAcce> resp = null;

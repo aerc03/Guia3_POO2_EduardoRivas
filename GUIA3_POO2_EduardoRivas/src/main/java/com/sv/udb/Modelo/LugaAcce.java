@@ -24,6 +24,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  *
  * @author aerc
+ * @version 1.0
+ * @since 25 de agosto de 2016
  */
 @Entity
 @Table(name = "luga_acce", catalog = "rceron_poo", schema = "")
@@ -55,49 +57,93 @@ public class LugaAcce implements Serializable {
     @Column(name = "esta")
     private Integer esta;
 
+    /**
+     * Metodo constructor de la clase LugaAcce
+     */
     public LugaAcce() {
     }
 
+    
     public LugaAcce(Long codiLugaAcce) {
         this.codiLugaAcce = codiLugaAcce;
     }
 
+    /**
+     * Metodo que devuelve el valor del atributo codilugaacce
+     * @return codiLugaAcce
+     */
     public Long getCodiLugaAcce() {
         return codiLugaAcce;
     }
 
+    /**
+     * Metodo para darle un valor al atributo
+     * @param codiLugaAcce 
+     */
     public void setCodiLugaAcce(Long codiLugaAcce) {
         this.codiLugaAcce = codiLugaAcce;
     }
 
+    /**
+     * Metodo que devuelve el valor del atributo NombLugaAcce
+     * @return codiLugaAcce
+     */
     public String getNombLugaAcce() {
         return nombLugaAcce;
     }
 
+    /**
+     * Metodo para darle un valor al atributo
+     * @param nombLugaAcce 
+     */
     public void setNombLugaAcce(String nombLugaAcce) {
         this.nombLugaAcce = nombLugaAcce;
     }
 
+    /**
+     * Metodo que devuelve el valor del atributo FechaAlta
+     * @return fechAlta de tipo Date
+     */
     public Date getFechAlta() {
         return fechAlta;
     }
 
+    /**
+     * Recibe y asigna un valor de tipo date a el atributo
+     * @param fechAlta 
+     */
     public void setFechAlta(Date fechAlta) {
         this.fechAlta = fechAlta;
     }
 
+    /**
+     * Metodo que devuelve el valor del atributo FechBaja
+     * @return fechBaja de tipo Date
+     */
     public Date getFechBaja() {
         return fechBaja;
     }
 
+    /**
+     * Recibe una fecha y la asigna al atributo fechBaja
+     * @param fechBaja 
+     */
     public void setFechBaja(Date fechBaja) {
         this.fechBaja = fechBaja;
     }
 
+    /**
+     * Metodo que devuelve el valor del atributo Estado
+     * @return esta de tipo entero
+     */
     public Integer getEsta() {
         return esta;
     }
 
+    /**
+     * Recibe un valor entero que asigna al atributo Esta
+     * @param esta 
+     */
     public void setEsta(Integer esta) {
         this.esta = esta;
     }

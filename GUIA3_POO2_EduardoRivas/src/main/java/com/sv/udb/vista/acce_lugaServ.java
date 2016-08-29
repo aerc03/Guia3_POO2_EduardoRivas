@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  *
  * @author aerc
+ * @version 1.0 25 agosto de 2016
  */
 @WebServlet(name = "acce_lugaServ", urlPatterns = {"/acce_lugaServ"})
 public class acce_lugaServ extends HttpServlet {
@@ -38,6 +39,9 @@ public class acce_lugaServ extends HttpServlet {
         boolean esValido = request.getMethod().equals("POST");
         if(esValido)
         {
+            /**
+             * Variable: Recibe el texto del boton selecionado para hacer dicha accion
+             */
             String mens = "";
             String CRUD = request.getParameter("CursBoton");
             if(CRUD.equals("Guardar"))

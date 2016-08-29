@@ -18,6 +18,12 @@ import javax.persistence.Persistence;
  * @author aerc
  */
 public class tipo_gafeCtrl {
+    /**
+     * Metodo que guarda el objeto en la base de datos en la tabla tipo_gafe
+     * @param obje de tipo LugaAcce
+     * @return resp de tipo boolean true si no hubo ningun problema de lo contrario false
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public boolean guar(TipoGafe obje)
     {
         boolean resp = false;
@@ -40,6 +46,12 @@ public class tipo_gafeCtrl {
         return resp;
     }
     
+    /**
+     * Metodo que Consulta el objeto en la base de datos en la tabla tipo_gafe
+     * @param codi de tipo long, se utiliza para consultar un registro en la base
+     * @return resp de tipo TipoGafe con el objeto del registro consultado
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public TipoGafe cons(Long codi)
     {
         TipoGafe resp = null;
@@ -61,6 +73,11 @@ public class tipo_gafeCtrl {
         return resp;
     }
     
+    /**
+     * Metodo que consulta todos los registros de la tabla tipo_gafe
+     * @return resp una lista con los registros de la tabla tipo_gafe
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public List<TipoGafe> consTodo()
     {
         List<TipoGafe> resp = null;
@@ -82,6 +99,13 @@ public class tipo_gafeCtrl {
         return resp;
     }
     
+    /**
+     * Metodo que "elimina" el objeto en la base de datos en la tabla tipo_gafe, cambia el estado y guarda
+     * la fecha en la que se elimino en el campo fech_baja
+     * @param obje de tipo TipoGafe
+     * @return resp de tipo boolean true si no hubo ningun problema de lo contrario false
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public boolean elim(TipoGafe obje)
     {
         boolean resp = false;
@@ -108,6 +132,12 @@ public class tipo_gafeCtrl {
         return resp;
     }
     
+    /**
+     * Metodo que modifica el registro en la base de datos en la tabla tipo_gafe
+     * @param obje de tipo TipoGafe
+     * @return resp de tipo boolean true si no hubo ningun problema de lo contrario false
+     * @since Este metodo se incluye desde la version 1.0
+     */
     public boolean modi(TipoGafe obje)
     {
         boolean resp = false;

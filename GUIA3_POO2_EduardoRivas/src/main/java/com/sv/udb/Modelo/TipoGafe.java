@@ -55,6 +55,9 @@ public class TipoGafe implements Serializable {
     @Column(name = "esta")
     private Integer esta;
 
+    /**
+     * Constructor de la clase
+     */
     public TipoGafe() {
     }
 
@@ -62,42 +65,82 @@ public class TipoGafe implements Serializable {
         this.codiTipoGafe = codiTipoGafe;
     }
 
+    /**
+     * Retorna un tipo LONG del atributo
+     * @return codiTipoGafe
+     */
     public Long getCodiTipoGafe() {
         return codiTipoGafe;
     }
 
+    /**
+     * Asigna un valor de tipo LONG al atributo
+     * @param codiTipoGafe 
+     */
     public void setCodiTipoGafe(Long codiTipoGafe) {
         this.codiTipoGafe = codiTipoGafe;
     }
 
+    /**
+     * Retorna un valor string del atributo
+     * @return nombTipoGafe
+     */
     public String getNombTipoGafe() {
         return nombTipoGafe;
     }
 
+    /**
+     * Asigna un valor string al atributo
+     * @param nombTipoGafe 
+     */
     public void setNombTipoGafe(String nombTipoGafe) {
         this.nombTipoGafe = nombTipoGafe;
     }
 
+    /**
+     * Retorna un valor date del atributo
+     * @return fechAlta
+     */
     public Date getFechAlta() {
         return fechAlta;
     }
 
+    /**
+     * Asigna el valor de fecha al atributo
+     * @param fechAlta 
+     */
     public void setFechAlta(Date fechAlta) {
         this.fechAlta = fechAlta;
     }
 
+    /**
+     * Retorna el valor date del atributo fech baja
+     * @return 
+     */
     public Date getFechBaja() {
         return fechBaja;
     }
 
+    /**
+     * Asigna una fecha al atributo
+     * @param fechBaja 
+     */
     public void setFechBaja(Date fechBaja) {
         this.fechBaja = fechBaja;
     }
 
+    /**
+     * retorna el estado del atributo
+     * @return 
+     */
     public Integer getEsta() {
         return esta;
     }
 
+    /**
+     * Asigna el estado al atributo
+     * @param esta 
+     */
     public void setEsta(Integer esta) {
         this.esta = esta;
     }
